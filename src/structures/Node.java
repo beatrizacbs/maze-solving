@@ -4,11 +4,14 @@ import structures.enums.VizinhoDirection;
 
 import java.util.List;
 
-public class Node {
+public class Node implements Comparable<Node>{
 
     private int x;
     private int y;
     private double heuristica;
+    private int pesoAtual;
+    private VizinhoDirection vizinhoProibido;
+
     /*
     * 0 - cima
     * 1 - baixo
@@ -46,6 +49,14 @@ public class Node {
 
     public void setHeuristica(double heuristica) {
         this.heuristica = heuristica;
+    }
+
+    public int getPesoAtual() {
+        return pesoAtual;
+    }
+
+    public void setPesoAtual(int pesoAtual) {
+        this.pesoAtual = pesoAtual + new Double(heuristica).intValue();
     }
 
     public void setVizinho(VizinhoDirection direction, Node node)
@@ -92,5 +103,57 @@ public class Node {
     @Override
     public String toString() {
         return "(" + this.x + ", " + this.y + ")        ";
+    }
+
+    @Override
+    public int compareTo(Node o) {
+        int retorno = 0;
+        if (this.getPesoAtual() > o.getPesoAtual())
+        {
+            retorno = 1;
+        }
+        else if (this.getPesoAtual() < o.getPesoAtual())
+        {
+            retorno = -1;
+        }
+
+        return retorno;
+    }
+
+    public Node getMenorVizinho()
+    {
+        Node retorno = null;
+        for(int i = 0; i < vizinhos.length; i++)
+        {
+            if(vizinhos[i] != null)
+            {
+                if(retorno == null)
+                {
+                    retorno = vizinhos[i];
+                }
+                else
+                {
+                    if(vizinhos[i].getPesoAtual() < retorno.getPesoAtual())
+                    {
+                        retorno = vizinhos[i];
+                    }
+                }
+
+            }
+        }
+        return retorno;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Node)
+        {
+            Node no = (Node) obj;
+            boolean retorno = (no.getX() == this.getX()) && (no.getY() == this.getY());
+            return retorno;
+
+        }
+
+        return false;
     }
 }

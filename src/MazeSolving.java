@@ -20,8 +20,8 @@ public class MazeSolving {
         imageRender.initialize();
         Graph graph = Graph.getInstance(imageRender.getPixelsStruture());
         Node currentNode = graph.getStartNode();
-
-        while((currentNode.getY() != graph.getEndNode().getY()) && (currentNode.getX() != graph.getEndNode().getX()))
+        AStar aStar = new AStar(graph.getStartNode(), graph.getEndNode());
+       /* while((currentNode.getY() != graph.getEndNode().getY()) && (currentNode.getX() != graph.getEndNode().getX()))
         {
 
             double[] cor = matrix.get(currentNode.getX(), currentNode.getY());
@@ -30,8 +30,10 @@ public class MazeSolving {
             currentNode = graph.getEndNode();
 
 
-        }
-        imgcodecs.imwrite("Output.jpg", matrix); //Writes image back to the file system using values of the modified matrix
+        }*/
+
+        imgcodecs.imwrite("Output.jpg", matrix);//Writes image back to the file system using values of the modified matrix
+
 
     }
 }
