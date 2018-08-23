@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2ab95500-591e-45c4-a6e6-313678b21707" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MazeSolving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolving.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MazeSolving/algorothms/AStar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MazeSolving/algorothms/AStar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MazeSolving/structures/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MazeSolving/structures/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MazeSolving/structures/Node$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MazeSolving/structures/Node$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MazeSolving/structures/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MazeSolving/structures/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorothms/AStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorothms/AStar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structures/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/structures/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,8 +36,8 @@
       <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/structures/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="323">
+              <caret line="50" column="78" selection-start-line="50" selection-start-column="78" selection-end-line="50" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getInstance#0;class#Graph#0" />
@@ -44,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AStar.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AStar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algorothms/AStar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="307">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/structures/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+            <state relative-caret-position="147">
+              <caret line="136" column="35" lean-forward="true" selection-start-line="136" selection-start-column="35" selection-end-line="136" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,10 +141,10 @@
         <option value="$PROJECT_DIR$/src/util/ImageRender.java" />
         <option value="$PROJECT_DIR$/src/structures/enums/VizinhoDirection.java" />
         <option value="$PROJECT_DIR$/src/structures/enums/TipoHeuristica.java" />
-        <option value="$PROJECT_DIR$/src/structures/Graph.java" />
         <option value="$PROJECT_DIR$/src/MazeSolving.java" />
         <option value="$PROJECT_DIR$/src/structures/Node.java" />
         <option value="$PROJECT_DIR$/src/algorothms/AStar.java" />
+        <option value="$PROJECT_DIR$/src/structures/Graph.java" />
       </list>
     </option>
   </component>
@@ -153,9 +157,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -285,16 +290,15 @@
       <workItem from="1533765332990" duration="5892000" />
       <workItem from="1533842979795" duration="18700000" />
       <workItem from="1534450492662" duration="2656000" />
-      <workItem from="1534970640682" duration="9043000" />
+      <workItem from="1534970640682" duration="13024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46285000" />
+    <option name="totallyTimeSpent" value="50266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -305,9 +309,9 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.05511811" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.45826772" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.67401576" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.1984252" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13103953" />
@@ -318,7 +322,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.89606297" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5102362" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -328,6 +332,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -586,29 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MazeSolving.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/structures/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstance#0;class#Graph#0" />
-            <element signature="method#Graph#0;class#Graph#0" />
-            <element signature="method#findStartNode#0;class#Graph#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/structures/Pixel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -626,10 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/structures/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/MazeSolving.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+        <state relative-caret-position="198">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -638,8 +645,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorothms/AStar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="307">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structures/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="50" column="78" selection-start-line="50" selection-start-column="78" selection-end-line="50" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getInstance#0;class#Graph#0" />
+            <element signature="method#Graph#0;class#Graph#0" />
+            <element signature="method#findStartNode#0;class#Graph#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structures/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="136" column="35" lean-forward="true" selection-start-line="136" selection-start-column="35" selection-end-line="136" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

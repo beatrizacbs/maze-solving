@@ -48,7 +48,7 @@ public class Graph {
             }
         }
         this.endNode.setHeuristica(0);
-        System.out.println("End node found at position: " + position);
+        System.out.println("End node found at position: " + endNode.toString());
     }
 
     private void generateNodes() {
@@ -56,10 +56,10 @@ public class Graph {
         Node[] nosAcima = new Node[pixelMatrix[0].length];
         nosAcima[startNode.getY()] = startNode;
         Node anterior = null;
-        for(int i = 1; i < pixelMatrix.length - 1; i++)
+        for(int i = 1; i < pixelMatrix.length; i++)
         {
             anterior = null;
-            for (int j = 1; j < pixelMatrix[i].length - 1; j++)
+            for (int j = 1; j < pixelMatrix[i].length; j++)
             {
                 Pixel pixelAtual = pixelMatrix[i][j];
                 switch (pixelAtual.getPixelType())

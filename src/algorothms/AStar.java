@@ -31,10 +31,16 @@ public class AStar {
         while (!(this.noAtual).equals(this.endNode))
         {
             System.out.println("X: " + noAtual.getX() + " Y: " + noAtual.getY());
-            calcularDistancias();
+            calcularPesos();
+            if(priorityQueue.peek() != null)
+            {
+                noAtual = priorityQueue.poll();
+            }
+            else
+            {
+                break;
+            }
 
-            this.listaCaminhoPercorrido.add(priorityQueue.peek());
-            this.noAtual = priorityQueue.poll();
 
         }
     }
@@ -43,7 +49,7 @@ public class AStar {
 
     }
 
-    private void calcularDistancias() {
+    private void calcularPesos() {
         Node[] vizinhos = new Node[]{
                 noAtual.getVizinho(VizinhoDirection.CIMA),
                 noAtual.getVizinho(VizinhoDirection.BAIXO),
@@ -51,20 +57,20 @@ public class AStar {
                 noAtual.getVizinho(VizinhoDirection.ESQUERDA)
         };
 
-        for(int i = 0; i < vizinhos.length; i++)
-        {
-            Node no = vizinhos[i];
-            if (no != null)
+        for (Node vizinho :
+                vizinhos) {
+            if (vizinho != null)
             {
-                double fator1 = Math.pow(noAtual.getX() - no.getX(), 2);
-                double fator2 = Math.pow(noAtual.getY() - no.getY(), 2);
-                double distancia = Math.sqrt(fator1 + fator2);
-                if(!this.listaCaminhoPercorrido.contains(no) && !no.equals(noAtual))
+                double fator1 = Math.pow(noAtual.getX() - vizinho.getX(), 2);
+                double fator2 = Math.pow(noAtual.getY() - vizinho.getY(), 2);
+                double distancia = Math.sqrt(fator1 + fator2) + vizinho.getDistanciaPercorrida();
+                vizinho.setDistanciaPercorrida(new Double(distancia).intValue());
+                if(!this.listaCaminhoPercorrido.contains(vizinho) && !vizinho.equals(noAtual))
                 {
-                    no.setPesoAtual(new Double(distancia).intValue());
-                    priorityQueue.add(no);
+                    vizinho.setPesoAtual(new Double(distancia).intValue());
+                    priorityQueue.add(vizinho);
+                    listaCaminhoPercorrido.add(vizinho);
                 }
-
             }
         }
         

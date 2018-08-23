@@ -10,6 +10,7 @@ public class Node implements Comparable<Node>{
     private int y;
     private double heuristica;
     private int pesoAtual;
+    private int distanciaPercorrida;
     private VizinhoDirection vizinhoProibido;
 
     /*
@@ -57,6 +58,14 @@ public class Node implements Comparable<Node>{
 
     public void setPesoAtual(int pesoAtual) {
         this.pesoAtual = pesoAtual + new Double(heuristica).intValue();
+    }
+
+    public int getDistanciaPercorrida() {
+        return distanciaPercorrida;
+    }
+
+    public void setDistanciaPercorrida(int distanciaPercorrida) {
+        this.distanciaPercorrida = distanciaPercorrida;
     }
 
     public void setVizinho(VizinhoDirection direction, Node node)
