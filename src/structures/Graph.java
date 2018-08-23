@@ -69,23 +69,23 @@ public class Graph {
                     case NODE:
                         Node aux = new Node(i, j);
                         aux.setHeuristica(calcularHeuristica(aux, TipoHeuristica.EUCLIDIANA));
-                        System.out.println("No encontrado: " + aux.toString());
+                        //System.out.println("No encontrado: " + aux.toString());
                         if(nosAcima[j] != null)
                         {
-                           System.out.println("Ligou com no: " + nosAcima[j].toString() + VizinhoDirection.CIMA);
+                           //System.out.println("Ligou com no: " + nosAcima[j].toString() + VizinhoDirection.CIMA);
                            nosAcima[j].setVizinho(VizinhoDirection.BAIXO, aux);
                            aux.setVizinho(VizinhoDirection.CIMA, nosAcima[j]);
                         }
 
                         if(anterior != null)
                         {
-                           System.out.println("Ligou com no: " + anterior.toString() + VizinhoDirection.ESQUERDA);
+                           //System.out.println("Ligou com no: " + anterior.toString() + VizinhoDirection.ESQUERDA);
                            aux.setVizinho(VizinhoDirection.ESQUERDA, anterior);
                            anterior.setVizinho(VizinhoDirection.DIREITA, aux);
                         }
                         else
                         {
-                            System.out.println("No anterior: null" );
+                           // System.out.println("No anterior: null" );
                         }
 
                         anterior = aux;

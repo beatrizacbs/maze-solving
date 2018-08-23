@@ -13,7 +13,7 @@ public class MazeSolving {
     public static void main(String[] args) {
         System.out.println(Core.VERSION);
         Imgcodecs imgcodecs = new Imgcodecs();
-        String file = "C:\\Users\\Marnie\\Desktop\\normal.png";
+        String file = "C:\\Users\\Marnie\\Desktop\\braid200.png";
         Mat matrix = imgcodecs.imread(file);
         //Graph graph = new Graph(matrix);
         ImageRender imageRender = new ImageRender(matrix);
@@ -21,7 +21,10 @@ public class MazeSolving {
         Graph graph = Graph.getInstance(imageRender.getPixelsStruture());
         Node currentNode = graph.getStartNode();
         AStar aStar = new AStar(graph.getStartNode(), graph.getEndNode());
-       /* while((currentNode.getY() != graph.getEndNode().getY()) && (currentNode.getX() != graph.getEndNode().getX()))
+        //Essa parte de saida da imagem vai ficar sem funcionar por enquanto até eu descobrir um jeito de pegar somente o
+        // melhor caminho sem o backtrack. Por enquanto o algoritmo ta mapeando também os passos com backtrack apenas pulando para
+        // o próximo nó da fila de prioridade.
+        /*while((currentNode.getY() != graph.getEndNode().getY()) && (currentNode.getX() != graph.getEndNode().getX()))
         {
 
             double[] cor = matrix.get(currentNode.getX(), currentNode.getY());
